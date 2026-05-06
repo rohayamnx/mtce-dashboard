@@ -7,7 +7,7 @@ import { Technician, TechnicianRole } from '../types';
 export const TeamView: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [roleFilter, setRoleFilter] = useState<TechnicianRole | 'all'>('all');
-  const [team, setTeam] = useState<Technician[]>(technicians);
+  const [team] = useState<Technician[]>(technicians);
 
   const filteredTeam = team.filter(tech => {
     const matchesSearch = tech.name.toLowerCase().includes(searchTerm.toLowerCase());
