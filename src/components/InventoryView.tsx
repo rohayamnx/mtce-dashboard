@@ -7,7 +7,7 @@ import { SparePart } from '../types';
 export const InventoryView: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showCriticalOnly, setShowCriticalOnly] = useState(false);
-  const [parts, setParts] = useState<SparePart[]>(spareParts);
+  const [parts] = useState<SparePart[]>(spareParts);
 
   const filteredParts = parts.filter(part => {
     const matchesSearch = part.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
