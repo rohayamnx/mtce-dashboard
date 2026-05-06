@@ -1,4 +1,4 @@
-import { MachineStatus, TicketPriority, TicketStatus } from '../types';
+import { MachineStatus, TicketStatus } from '../types';
 
 export const formatDowntime = (minutes: number): string => {
   if (minutes < 60) return `${minutes}m`;
