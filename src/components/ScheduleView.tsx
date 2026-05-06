@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Clock, User, CheckCircle, AlertCircle } from 'lucide-react';
+import { Calendar, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 import { dailyTasks, technicians } from '../utils/data';
 import { StatusBadge } from './StatusBadge';
 import { DailyTask } from '../types';
